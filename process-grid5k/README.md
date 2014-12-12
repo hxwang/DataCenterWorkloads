@@ -5,6 +5,7 @@
 |file| function|
 |:---|:--------|
 |[]()| tool function to process data by column, tool provided by [Zhonghua Xi](https://github.com/xizhonghua/pystats)|
+|[filterUnExecuteJobs.py](./filterUnExecuteJobs.py)| pre-processing jobs, filter out other jobs that didn't execute|
 |[]()| process job running time|
 
 
