@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 
 # Author: Zhonghua Xi
-# Date: 12/3/2014
+# Date: 12/12/2014
 
 import sys
+import re
 import numpy as np
 import scipy as sp
 import scipy.stats
 
-VERSION = "0.0.3"
+VERSION = "0.0.5"
 
 delimiter = ' '
 field = 1
@@ -16,6 +17,7 @@ i = 1
 skip = 0
 precision = 5
 confidence = 0.95
+navalue = 'N/A'
 
 def print_help():
     print 'pystats - a summary statistics script'
@@ -29,6 +31,7 @@ def print_help():
     print '    -s# ', 'skip first # lines, default is one for header'
     print '    -c# ', 'confidence default =', confidence
     print '    -p# ', 'precision, default =', precision
+    print '    -i#' , 'na valude, default = ', navalue
 
 
 def parse_args():
@@ -38,6 +41,7 @@ def parse_args():
     global skip
     global precision
     global confidence
+    global navalue
 
     while i < len(sys.argv):
         arg = sys.argv[i]
@@ -57,6 +61,8 @@ def parse_args():
             precision = int(arg[2:])
         elif arg.startswith('-c'):
             confidence = float(arg[2:])
+        elif arg.startswith('-i'):
+            navalue = arg[2:]
         i+=1
 
 def mean(data, s = None):
@@ -104,9 +110,12 @@ def print_st(key, value):
     else:
         print "%s = %d" % (key.rjust(12,'_'), value)
 
-def stats(stream, field=1, delimiter=' ', skip = 0, confidence=0.95):
+def stats(stream, field=1, delimiter=' ', skip = 0, confidence = 0.95, navalue = 'N/A'):
     data = []
     lineNum = 0
+
+    patt = re.compile("[^\t]+")
+        
     for line in stream:
 
         lineNum += 1
@@ -117,8 +126,20 @@ def stats(stream, field=1, delimiter=' ', skip = 0, confidence=0.95):
         # if line is empty or white space, do nothing
         if len(line) == 0 or line.isspace(): continue
 
-        items = line.split(delimiter)
-        data.append(float(items[field-1]))
+        if delimiter == '\\t':            
+            items = patt.findall(line)            
+        else:    
+            items = line.split(delimiter)
+
+        if len(items) < field:
+            print 'Error! at input file line:', lineNum
+
+        item = items[field-1].strip()
+
+        # ignore the na
+        if(item == navalue): continue
+
+        data.append(float(item))
 
     s = sum(data)
     l = len(data)
@@ -135,7 +156,7 @@ def stats(stream, field=1, delimiter=' ', skip = 0, confidence=0.95):
 if  __name__ == "__main__":
     parse_args()
 
-    field, l, m, v, std_dev, s, min_value, max_value, median_value, ci = stats(sys.stdin, field, delimiter, skip, confidence)
+    field, l, m, v, std_dev, s, min_value, max_value, median_value, ci = stats(sys.stdin, field, delimiter, skip, confidence, navalue)
 
     print_st("Field", field)
     print_st("Lines", l)
