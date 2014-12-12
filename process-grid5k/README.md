@@ -9,7 +9,7 @@
 
 
 ### Results
-- Processing time
+- Processing time (In seconds)
 
 |Records| Mean| Variance| SteDev| Sum|
 |:------|:------|:------|:------|:------|
