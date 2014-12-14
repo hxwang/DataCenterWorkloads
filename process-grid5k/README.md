@@ -1,7 +1,7 @@
 ## Processing Grid5k Workload
 
 ### Intro
-- The scripts in this folder have the objective to calculate the statistics information of prallel jobs. In specific, the job traces is from [TOAdd].
+- The scripts in this folder have the objective to calculate the statistics information of prallel jobs. In specific, the job traces is from [GWA-T-2 Grid5000](https://github.com/hxwang/GreenDC-Summary/blob/master/traces/file/grid5k.md).
 
 ### Files
 |file| function|
