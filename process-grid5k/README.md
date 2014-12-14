@@ -23,6 +23,12 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 
 ### How to run
 - Step1: pre-processing workloads, filter out jobs that didn't started. This scripts will take file `'../data/anon_jobs_gwf/grid5000_clean_trace.log'` as input, and output the processed jobs to `'../data/anon_jobs_gwf/filtered_grid5000_clean_trace.log'`.
-  ```
-  python filterUnExecuteJob.py`
-  ```
+
+```
+python filterUnExecuteJob.py`
+```
+
+- Step2: calculate statistics of processing time. Take `'../data/anon_jobs_gwf/filtered_grid5000_clean_trace.log'` as input.
+
+```
+python process-grid5k.py
