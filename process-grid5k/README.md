@@ -22,7 +22,9 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 | 1.0| 3015459.0| 43239.5|0.95| 3038.93| 3156.4|
 
 ### How to run
-- Step1: pre-processing workloads, filter out jobs that didn't started. This scripts will take file `'../data/anon_jobs_gwf/grid5000_clean_trace.log'` as input, and output the processed jobs to `'../data/anon_jobs_gwf/filtered_grid5000_clean_trace.log'`.
+- Step1: pre-processing workloads, filter out jobs that didn't started. 
+  - Input: this scripts will take file `'../data/anon_jobs_gwf/grid5000_clean_trace.log'` as input
+  - Output: output the processed jobs to `'../data/anon_jobs_gwf/filtered_grid5000_clean_trace.log'`.
 
 ```
 python filterUnExecuteJob.py`
