@@ -36,8 +36,12 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 #### Histogram
 #### How to run
 - Step 1: extract processing time column
-  `python .\getColumn.py 15 4 ..\data\ANL-Intrepid-2009-1.swf\ANL-Intrepid-2009-1.swf ..\data\ANL-Intrepid-2009-1.swf\processTim
-e.txt`
+  - Format `python .\getColumn.py [Skip-lines] [Columns] [InputFile] [OutputFile]`
+  - Example 
+  ```
+  python .\getColumn.py 15 4 ..\data\ANL-Intrepid-2009-1.swf\ANL-Intrepid-2009-1.swf ..\data\ANL-Intrepid-2009-1.swf\processTim
+e.txt
+  ```
 - Step 2: plot histogram
 
 
