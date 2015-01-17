@@ -1,0 +1,25 @@
+; Computer: Blue Gene/P 
+; Installation: Intrepid - Argonne National Laboratory
+; Acknowledge: Narayan Desai (desai@mcs.anl.gov), Susan Coghlan (smc@alcf.anl.gov), ANL
+; Information: http://www.alcf.anl.gov/resources/storage.php
+; Conversion: Wei Tang (wtang6@iit.edu) Feb 16, 2010
+; MaxJobs: 68936
+; MaxRecords: 68936
+; Preemption: No
+; UnixStartTime: 1231135224
+; TimeZoneString: America/Chicago
+; StartTime: Mon Jan 5 00:00:24 GMT-6 2009
+; EndTime:  Tue Sep 1 23:42:06 GMT-6 2009
+; MaxNodes: 40960
+; MaxProcs: 163840
+; Note: Scheduler is Cobalt (http://trac.mcs.anl.gov/projects/cobalt/)
+ 1 0 6680 7560 2048 -1 -1 2048 10800 -1 -1 1 -1 -1 1 -1 -1 -1
+ 2 7 14297 7568 2048 -1 -1 2048 10800 -1 -1 1 -1 -1 1 -1 -1 -1
+ 3 1590 17322 7561 2048 -1 -1 2048 10800 -1 -1 1 -1 -1 1 -1 -1 -1
+ 4 2205 61 14972 8192 -1 -1 8192 21600 -1 -1 2 -1 -1 2 -1 -1 -1
+ 5 2566 17357 7571 2048 -1 -1 2048 10800 -1 -1 1 -1 -1 1 -1 -1 -1
+ 6 2751 36 3653 256 -1 -1 64 3600 -1 -1 3 -1 -1 3 -1 -1 -1
+ 7 5485 12162 6147 65536 -1 -1 16384 10800 -1 -1 4 -1 -1 4 -1 -1 -1
+ 8 6553 39 2733 256 -1 -1 64 3600 -1 -1 3 -1 -1 3 -1 -1 -1
+ 9 10355 48 565 256 -1 -1 64 3600 -1 -1 3 -1 -1 3 -1 -1 -1
+ 10 14158 50 911 256 -1 -1 64 3600 -1 -1 3 -1 -1 3 -1 -1 -1
