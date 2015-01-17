@@ -33,7 +33,7 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 |:------|:------|:------|:------|:------|:------|
 |10.0| 408773.0| 3607.5 |0.95| 5108.828| 5243.868|
 
-#### Histogram
+### Experiment 2: Histogram
 #### How to run
 - Step 1: extract processing time column
   - Format `python .\getColumn.py [Skip-lines] [Columns] [InputFile] [OutputFile]`
