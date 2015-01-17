@@ -33,15 +33,15 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 |:------|:------|:------|:------|:------|:------|
 |10.0| 408773.0| 3607.5 |0.95| 5108.828| 5243.868|
 
-### Experiment 2: Histogram
-#### How to run
-- Step 1: extract processing time column
-  - Format `python .\getColumn.py [Skip-lines] [Columns] [InputFile] [OutputFile]`
-  - Example 
-  ```
-  python .\getColumn.py 15 4 ..\data\ANL-Intrepid-2009-1.swf\ANL-Intrepid-2009-1.swf ..\data\ANL-Intrepid-2009-1.swf\processTim
-e.txt
-  ```
-- Step 2: plot histogram
+#### Histogram
+- How to run
+  - Step 1: extract processing time column
+    - Format `python .\getColumn.py [Skip-lines] [Columns] [InputFile] [OutputFile]`
+    - Example 
+    ```
+    python .\getColumn.py 15 4 ..\data\ANL-Intrepid-2009-1.swf\ANL-Intrepid-2009-1.swf ..\data\ANL-Intrepid-2009-1.swf\processTim
+  e.txt
+    ```
+  - Step 2: plot histogram
 
 
