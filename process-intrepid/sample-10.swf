@@ -9,7 +9,7 @@
 ; UnixStartTime: 1231135224
 ; TimeZoneString: America/Chicago
 ; StartTime: Mon Jan 5 00:00:24 GMT-6 2009
-; EndTime:  Tue Sep 1 23:42:06 GMT-6 2009
+; EndTime: Tue Sep 1 23:42:06 GMT-6 2009
 ; MaxNodes: 40960
 ; MaxProcs: 163840
 ; Note: Scheduler is Cobalt (http://trac.mcs.anl.gov/projects/cobalt/)
