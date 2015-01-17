@@ -11,21 +11,21 @@
 
 
 
-### Results
-- Processing time (in seconds)
+### Experiment 1: Analyze Processing Time
+##### Statistics (in seconds)
 
-|Records| Mean| Variance| SteDev| Sum|
-|:------|:------|:------|:------|:------|
-| 68936| 5176.3476| 81807258.969| 9044.737| 356836696.0| 
-
-Min| Max| Median| Confidence| Conf.L| Conf.U|
-|:------|:------|:------|:------|:------|:------|
-|10.0| 408773.0| 3607.5 |0.95| 5108.828| 5243.868|
-
-
+  |Records| Mean| Variance| SteDev| Sum|
+  |:------|:------|:------|:------|:------|
+  | 68936| 5176.3476| 81807258.969| 9044.737| 356836696.0| 
+  
+  Min| Max| Median| Confidence| Conf.L| Conf.U|
+  |:------|:------|:------|:------|:------|:------|
+  |10.0| 408773.0| 3607.5 |0.95| 5108.828| 5243.868|
 
 
-### How to run
+
+
+##### How to run
 - Step1: pre-processing workloads, make the sperator in each column as a single space
   - open input data `ANL-Intrepid-2009-1.swf` using note-pad++
   - repace 4-space `    ` with 2 spaces `  `
