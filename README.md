@@ -12,3 +12,4 @@ The objective of this project is to study the characteristic of data center work
 |:----|:-------|:-----|
 |[process-grid5k](./process-grid5k)| Study the processing time statistics of [GWA-T-2 Grid5000](https://github.com/hxwang/GreenDC-Summary/blob/master/traces/file/grid5k.md)| done|
 |[process-intrepid](./process-intrepid)| Study the processing time statistics of [ANL-Intrepid](https://github.com/hxwang/GreenDC-Summary/blob/master/traces/file/intrepid.md)| done|
+|[SWIM](https://github.com/SWIMProjectUCB/SWIM/wiki)| facebook MapReduce workload| ing|
