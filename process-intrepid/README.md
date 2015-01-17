@@ -1,7 +1,7 @@
 ## Process ANL-Intrepid 
 
 ### Intro
-- The scripts in this folder have the objective to calculate the statistics information of parallel jobs. In specific, the job traces is from [ANL-Intrepid](https://github.com/hxwang/GreenDC-Summary/blob/master/traces/file/intrepid.md).
+- The scripts in this folder have the objective to calculate the statistics information of parallel jobs. In specific, the job traces is from [ANL-Intrepid](../traces/intrepid.md).
 
 ### Files
 |file| function|
