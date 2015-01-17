@@ -13,4 +13,4 @@ def getColumn(skip, column, inputfile, outputfile):
         print >> f2, items[column]
 
 if __name__ == '__main__':
-  getColumn( sys.argv[1], sys.argv[2], sys.argv[3],sys.argv[4])
+  getColumn(int(sys.argv[1]), int(sys.argv[2]), sys.argv[3],sys.argv[4])
