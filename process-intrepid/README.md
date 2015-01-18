@@ -19,11 +19,6 @@
 --
 ### 3. Experiment 1: Analyze Processing Time
 
-  
-  ```
-  python process-intrepid.py
-  ```
-
 #### Statistics (in seconds)
 
 - How to run
@@ -32,7 +27,10 @@
     - repace 4-space `    ` with 2 spaces `  `
     - repace all 2-space `  ` with 1 space ` `
   - Step2: calculate statistics of processing time. Take `'../data/ANL-Intrepid-2009-1.swf/ANL-Intrepid-2009-1.swf'` as input.
-
+  ```
+  python process-intrepid.py
+  ```
+  
 - Statistics 
 
 |Job \#| Mean| Variance| SteDev| Sum|
