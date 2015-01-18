@@ -11,6 +11,8 @@
 |[process-intrepid.py](./process-intrepid.py)| process jobs' running time|
 |[getHistogram.m](./getHistogram.m)| plot histogram of processing time|
 |[getKMean.m](./getKMean.m)| plot k-mean of processing time|
+|[getHistogramArrivalTime.m](./getHistogramArrivalTime.m)| get histogram of arrival time|
+|[getHistogramInterArrivalTime.m](./getHistogramInterArrivalTime.m)| get histogram of interarrival time|
 
 --
 ### 3. Experiment 1: Analyze Processing Time
