@@ -70,19 +70,40 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 
 
 ### 4. Experiment 2: Analyze Arrive Time
-#### How to run
-- Step 1: get arrival time column (column =2)
-  - Format: `python .\getColumn.py [Skip-lines] [Columns] [InputFile] [OutputFile]`
-  - Example: 
+#### Histogram of arrival time
+- How to run
+  - Step 1: get arrival time column (column =2)
+    - Format: `python .\getColumn.py [Skip-lines] [Columns] [InputFile] [OutputFile]`
+    - Example: 
+    ```
+    python .\getColumn.py 15 2 ..\data\ANL-Intrepid-2009-1.swf\ANL-Intrepid-2009-1.swf ..\data\ANL-Intrepid-2009-1.swf\arrivalTim
+  e.txt
   ```
-  python .\getColumn.py 15 2 ..\data\ANL-Intrepid-2009-1.swf\ANL-Intrepid-2009-1.swf ..\data\ANL-Intrepid-2009-1.swf\arrivalTim
-e.txt
-```
+  - Step 2: get histogram 
+  ```
+  getHistogramArrivalTime('..\data\ANL-Intrepid-2009-1.swf\arrivalTime.txt')
+  ```
+  
+- Histogram of arrival time
+
+|Fig 4: Histogram of arrival time |
+|:----|
+|![](figs/arrivalTimeHist.png)|
+
 
 #### Inter arrival time
-- Get data
-  - get inter arrival time from arrival time using the following command
+- How to run
+  - Step 1:get inter arrival time from arrival time using the following command
   
   ```
 python .\getInterArrivalTime.py ..\data\ANL-Intrepid-2009-1.swf\arrivalTime.txt ..\data\ANL-Intrepid-2009-1.swf\interArrivalTime.txt
 ```
+  - Step 2: get histogram
+  ```
+   getHistogramInterArrivalTime('..\data\ANL-Intrepid-2009-1.swf\interArrivalTime.txt', true)
+  ```
+- Histogram of inter arrival time
+
+|Fig 5: Histogram of inter arrival time|
+|:-----|
+|![](./figs/interArrivalTimeHist.png)|
