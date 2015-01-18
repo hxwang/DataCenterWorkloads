@@ -1,9 +1,11 @@
 ## Process ANL-Intrepid 
 
 ### 1. Intro
-- The scripts in this folder have the objective to calculate the statistics information of parallel jobs. In specific, the job traces is from [ANL-Intrepid](../traces/intrepid.md).
+- The scripts in this folder have the objective to calculate the statistics information of batch jobs. 
+  - The job traces is from [ANL-Intrepid](../traces/intrepid.md).
+  - The analysis will focus on the job processing time and job arrival time.
 
-### 2. Files
+### 2. Scripts
 |file| function|
 |:---|:--------|
 |[pystats.py](./pystats.py)| tool function to process data by column, tool provided by [Zhonghua Xi](https://github.com/xizhonghua/pystats)|
@@ -16,18 +18,22 @@
 
 --
 ### 3. Experiment 1: Analyze Processing Time
-#### How to run
-- Step1: pre-processing workloads, make the sperator in each column as a single space
-  - open input data `ANL-Intrepid-2009-1.swf` using note-pad++
-  - repace 4-space `    ` with 2 spaces `  `
-  - repace all 2-space `  ` with 1 space ` `
-- Step2: calculate statistics of processing time. Take `'../data/ANL-Intrepid-2009-1.swf/ANL-Intrepid-2009-1.swf'` as input.
 
-```
-python process-intrepid.py
-```
+  
+  ```
+  python process-intrepid.py
+  ```
 
 #### Statistics (in seconds)
+
+- How to run
+  - Step1: pre-processing workloads, make the sperator in each column as a single space
+    - open input data `ANL-Intrepid-2009-1.swf` using note-pad++
+    - repace 4-space `    ` with 2 spaces `  `
+    - repace all 2-space `  ` with 1 space ` `
+  - Step2: calculate statistics of processing time. Take `'../data/ANL-Intrepid-2009-1.swf/ANL-Intrepid-2009-1.swf'` as input.
+
+- Statistics 
 
 |Job \#| Mean| Variance| SteDev| Sum|
 |:------|:------|:------|:------|:------|
@@ -47,7 +53,7 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
   e.txt
     ```
   - Step 2: plot histogram
-- Figures
+- Histogram figures
   - Fig 1: histogram of processing time of all jobs
   - Fig 2: histogram of processing time of all jobs, jobs with processing time larger than 24 hours are filtered out.
   
@@ -61,6 +67,7 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 
 #### K-mean Clustering
 - How to run
+  `getKMeanProcessTime`
 - Figures
   - Fig 3: cluster the processing time using k-mean with k = 6
   
