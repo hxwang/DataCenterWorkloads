@@ -112,3 +112,16 @@ python .\getInterArrivalTime.py ..\data\ANL-Intrepid-2009-1.swf\arrivalTime.txt 
 |Fig 5: Histogram of inter arrival time|
 |:-----|
 |![](./figs/interArrivalTimeHist_filtered.png)|
+
+
+### 5. Experiment 3: Cumulative workload
+- Objective: calculative cumulative workload at each time 
+- How to run
+ - `getCumulativeProcessTime`
+ 
+- Results
+  - Fig 6: cumulative workload
+  
+|Fig 6: Cumulative workload over time|
+|:---|
+|![](figs/cumulativeProcessingTime.png)|
