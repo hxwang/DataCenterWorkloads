@@ -80,4 +80,7 @@ e.txt
 #### Inter arrival time
 - Get data
   - get inter arrival time from arrival time using the following command
-  `python .\getInterArrivalTime.py ..\data\ANL-Intrepid-2009-1.swf\arrivalTime.txt ..\data\ANL-Intrepid-2009-1.swf\interArrivalTime.txt`
+  
+  ```
+python .\getInterArrivalTime.py ..\data\ANL-Intrepid-2009-1.swf\arrivalTime.txt ..\data\ANL-Intrepid-2009-1.swf\interArrivalTime.txt
+```
