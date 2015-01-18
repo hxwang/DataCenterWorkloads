@@ -8,7 +8,7 @@
 |:---|:--------|
 |[pystats.py](./pystats.py)| tool function to process data by column, tool provided by [Zhonghua Xi](https://github.com/xizhonghua/pystats)|
 |[process-intrepid.py](./process-intrepid.py)| process jobs' running time|
-
+|[getHistogram.m](./getHistogram.m)| plot histogram of processing time|
 
 --
 ### Experiment 1: Analyze Processing Time
@@ -25,7 +25,7 @@ python process-intrepid.py
 
 #### Statistics (in seconds)
 
-|Records| Mean| Variance| SteDev| Sum|
+|Job \#| Mean| Variance| SteDev| Sum|
 |:------|:------|:------|:------|:------|
 | 68936| 5176.3476| 81807258.969| 9044.737| 356836696.0| 
 
@@ -43,5 +43,14 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
   e.txt
     ```
   - Step 2: plot histogram
+- Figures
+  - Fig 1: histogram of processing time of all jobs
+  - Fig 2: histogram of processing time of all jobs, jobs with processing time larger than 24 hours are filtered out.
+  
+|Fig 1:Histogram Of Processing Time| 
+|:--| 
+|![](figs/processingTimeHist.png)| 
 
-
+|Fig 2:Histogram Of Processing Time with filtering of large jobs| 
+|:--| 
+|![](figs/processingTimeHist_filtered.png)| 
