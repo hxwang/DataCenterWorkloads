@@ -7,6 +7,7 @@
 |file| function|
 |:---|:--------|
 |[pystats.py](./pystats.py)| tool function to process data by column, tool provided by [Zhonghua Xi](https://github.com/xizhonghua/pystats)|
+|[getColumn.py](./getColumn.py)| tool function to extract target column from file|
 |[process-intrepid.py](./process-intrepid.py)| process jobs' running time|
 |[getHistogram.m](./getHistogram.m)| plot histogram of processing time|
 |[getKMean.m](./getKMean.m)| plot k-mean of processing time|
