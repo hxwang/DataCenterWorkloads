@@ -68,3 +68,11 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 
 
 ### 4. Experiment 2: Analyze Arrive Time
+#### How to run
+- Step 1: get arrival time column (column =2)
+  - Format: `python .\getColumn.py [Skip-lines] [Columns] [InputFile] [OutputFile]`
+  - Example: 
+  ```
+  python .\getColumn.py 15 2 ..\data\ANL-Intrepid-2009-1.swf\ANL-Intrepid-2009-1.swf ..\data\ANL-Intrepid-2009-1.swf\arrivalTim
+e.txt
+```
