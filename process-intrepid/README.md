@@ -43,8 +43,12 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
   e.txt
     ```
   - Step 2: plot histogram
-- 
-|Histogram Of Processing Time|
-|:--|
-|![](figs/processingTimeHist.png)|
+- Figures
 
+|Fig 1:Histogram Of Processing Time| 
+|:--| 
+|![](figs/processingTimeHist.png)| 
+
+|Fig 2:Histogram Of Processing Time with filtering of large jobs| 
+|:--| 
+|![](figs/processingTimeHist_filtered.png)| 
