@@ -13,7 +13,7 @@
     - service time: 12ms for each request
     - client arrival: exponential
     - inter arrival: lognormal distribution with mean 100ms
-- Comment: this workloads need to be run on real computers to get the running time of jobs.
+  - Comment: this workloads need to be run on real computers to get the running time of jobs.
 
 ### Batch jobs 
 
