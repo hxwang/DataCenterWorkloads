@@ -44,7 +44,9 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
     ```
   - Step 2: plot histogram
 - Figures
-
+  - Fig 1: histogram of processing time of all jobs
+  - Fig 2: histogram of processing time of all jobs, jobs with processing time larger than 24 hours are filtered out.
+  
 |Fig 1:Histogram Of Processing Time| 
 |:--| 
 |![](figs/processingTimeHist.png)| 
