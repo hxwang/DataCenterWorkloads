@@ -43,5 +43,8 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
   e.txt
     ```
   - Step 2: plot histogram
-
+- 
+|Histogram Of Processing Time|
+|:--|
+|![](figs/processingTimeHist.png)|
 
