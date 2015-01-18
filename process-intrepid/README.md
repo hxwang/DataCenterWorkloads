@@ -25,7 +25,7 @@ python process-intrepid.py
 
 #### Statistics (in seconds)
 
-|Records| Mean| Variance| SteDev| Sum|
+|Job \#| Mean| Variance| SteDev| Sum|
 |:------|:------|:------|:------|:------|
 | 68936| 5176.3476| 81807258.969| 9044.737| 356836696.0| 
 
