@@ -20,7 +20,7 @@ end
 % set(p, 'Color', 'g', 'LineWidth', 3, 'linestyle','--');
 % set(p, 'Marker', '<', 'MarkerSize', 10);
     
- hist(data,1000)
+ hist(data,500)
  mean_val = mean(data)
  max_val = max(data)
 %set x range and y range
@@ -52,9 +52,11 @@ set(gcf, 'PaperSize', [13 7]); %Set the paper to have width 5 and height 5.
 if(filterLarge)
 saveas(gca, strcat(pwd,'\figs\processingTimeHist_filtered', '.eps'),'psc2') %Save figure 
 saveas(gcf, strcat(pwd ,'\figs\processingTimeHist_filtered'), 'pdf') %Save figure 
+saveas(gcf, strcat(pwd ,'\figs\processingTimeHist_filtered'), 'png') %Save figure 
 else
 saveas(gca, strcat(pwd,'\figs\processingTimeHist', '.eps'),'psc2') %Save figure 
 saveas(gcf, strcat(pwd ,'\figs\processingTimeHist'), 'pdf') %Save figure 
+saveas(gcf, strcat(pwd ,'\figs\processingTimeHist'), 'png') %Save figure 
 end
 
 
