@@ -54,3 +54,12 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 |Fig 2:Histogram Of Processing Time with filtering of large jobs| 
 |:--| 
 |![](figs/processingTimeHist_filtered.png)| 
+
+#### K-mean Clustering
+- How to run
+- Figures
+  - Fig 3: cluster the processing time using k-mean with k = 6
+  
+|Fig 3: K-mean clustering of processing time (k=6)| 
+|:----|
+|![](./figs/processingTimeHist_k-mean.png)|
