@@ -76,3 +76,8 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
   python .\getColumn.py 15 2 ..\data\ANL-Intrepid-2009-1.swf\ANL-Intrepid-2009-1.swf ..\data\ANL-Intrepid-2009-1.swf\arrivalTim
 e.txt
 ```
+
+#### Inter arrival time
+- Get data
+  - get inter arrival time from arrival time using the following command
+  `python .\getInterArrivalTime.py ..\data\ANL-Intrepid-2009-1.swf\arrivalTime.txt ..\data\ANL-Intrepid-2009-1.swf\interArrivalTime.txt`
