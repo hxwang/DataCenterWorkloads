@@ -1,9 +1,9 @@
 ## Process ANL-Intrepid 
 
-### Intro
+### 1. Intro
 - The scripts in this folder have the objective to calculate the statistics information of parallel jobs. In specific, the job traces is from [ANL-Intrepid](../traces/intrepid.md).
 
-### Files
+### 2. Files
 |file| function|
 |:---|:--------|
 |[pystats.py](./pystats.py)| tool function to process data by column, tool provided by [Zhonghua Xi](https://github.com/xizhonghua/pystats)|
@@ -12,7 +12,7 @@
 |[getKMean.m](./getKMean.m)| plot k-mean of processing time|
 
 --
-### Experiment 1: Analyze Processing Time
+### 3. Experiment 1: Analyze Processing Time
 #### How to run
 - Step1: pre-processing workloads, make the sperator in each column as a single space
   - open input data `ANL-Intrepid-2009-1.swf` using note-pad++
@@ -66,4 +66,4 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 |![](./figs/processingTimeHist_k-mean.png)|
 
 
-### Experiment 2: Analyze Arrive Time
+### 4. Experiment 2: Analyze Arrive Time
