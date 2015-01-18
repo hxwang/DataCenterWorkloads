@@ -64,3 +64,6 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 |Fig 3: K-mean clustering of processing time (k=6)| 
 |:----|
 |![](./figs/processingTimeHist_k-mean.png)|
+
+
+### Experiment 2: Analyze Arrive Time
