@@ -9,6 +9,7 @@
 |[pystats.py](./pystats.py)| tool function to process data by column, tool provided by [Zhonghua Xi](https://github.com/xizhonghua/pystats)|
 |[process-intrepid.py](./process-intrepid.py)| process jobs' running time|
 |[getHistogram.m](./getHistogram.m)| plot histogram of processing time|
+|[getKMean.m](./getKMean.m)| plot k-mean of processing time|
 
 --
 ### Experiment 1: Analyze Processing Time
@@ -54,3 +55,12 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 |Fig 2:Histogram Of Processing Time with filtering of large jobs| 
 |:--| 
 |![](figs/processingTimeHist_filtered.png)| 
+
+#### K-mean Clustering
+- How to run
+- Figures
+  - Fig 3: cluster the processing time using k-mean with k = 6
+  
+|Fig 3: K-mean clustering of processing time (k=6)| 
+|:----|
+|![](./figs/processingTimeHist_k-mean.png)|
