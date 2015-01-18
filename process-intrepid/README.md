@@ -106,4 +106,4 @@ python .\getInterArrivalTime.py ..\data\ANL-Intrepid-2009-1.swf\arrivalTime.txt 
 
 |Fig 5: Histogram of inter arrival time|
 |:-----|
-|![](./figs/interArrivalTimeHist.png)|
+|![](./figs/interArrivalTimeHist_filtered.png)|
