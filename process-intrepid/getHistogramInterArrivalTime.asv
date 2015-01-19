@@ -1,5 +1,5 @@
 %Build Figure
-function getHistogram(fileName, filterLarge)
+function getHistogramInterArrivalTime(fileName, filtered)
 
 figure1 = figure;
 set(figure1,'units','normalized','outerposition',[0 0 1 1]);
@@ -10,17 +10,19 @@ hold(axes1,'all');
 set(axes1,'FontSize',30,'FontWeight','bold');
 
 
-data = textread(fileName)./3600;
+data = textread(fileName);
  
-if(filterLarge)
-    data = data(data<24)
-end
+
 %plot and set font, line type
 % p = plot(x(1,:),data(1,:));
 % set(p, 'Color', 'g', 'LineWidth', 3, 'linestyle','--');
 % set(p, 'Marker', '<', 'MarkerSize', 10);
-    
- hist(data,500)
+ 
+ if(filtered)
+     data = data(data <= 2*10^5)
+ end
+ 
+ hist(data,1000)
  mean_val = mean(data)
  max_val = max(data)
 %set x range and y range
@@ -38,7 +40,7 @@ legend(axes1,'show','Location','NorthWest','FontSize',10,'FontWeight','bold');
 legend('processing time');
 
 %set x, y Label
-set(get(axes1,'XLabel'),'String','processing time (hour)','FontSize',30,'FontWeight','bold');
+set(get(axes1,'XLabel'),'String','arrival time (seconds)','FontSize',30,'FontWeight','bold');
 set(get(axes1,'YLabel'),'String','count','FontSize',30,'FontWeight','bold');
 
 %set title
@@ -49,15 +51,11 @@ set(gcf, 'PaperPosition', [0 0 13 7]); %Position plot at left hand corner with w
 set(gcf, 'PaperSize', [13 7]); %Set the paper to have width 5 and height 5.
 
 %path
-if(filterLarge)
-saveas(gca, strcat(pwd,'\figs\processingTimeHist_filtered', '.eps'),'psc2') %Save figure 
-saveas(gcf, strcat(pwd ,'\figs\processingTimeHist_filtered'), 'pdf') %Save figure 
-saveas(gcf, strcat(pwd ,'\figs\processingTimeHist_filtered'), 'png') %Save figure 
-else
-saveas(gca, strcat(pwd,'\figs\processingTimeHist', '.eps'),'psc2') %Save figure 
-saveas(gcf, strcat(pwd ,'\figs\processingTimeHist'), 'pdf') %Save figure 
-saveas(gcf, strcat(pwd ,'\figs\processingTimeHist'), 'png') %Save figure 
-end
+
+saveas(gca, strcat(pwd,'\figs\interArrivalTimeHist', '.eps'),'psc2') %Save figure 
+saveas(gcf, strcat(pwd ,'\figs\interArrivalTimeHist'), 'pdf') %Save figure 
+saveas(gcf, strcat(pwd ,'\figs\interArrivalTimeHist'), 'png') %Save figure 
+
 
 
 end

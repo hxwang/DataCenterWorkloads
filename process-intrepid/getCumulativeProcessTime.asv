@@ -16,7 +16,6 @@ for i=1:size(at,1)
     cp(start_time:end_time) = cp(start_time:end_time) + 1;
 end
 
-
 figure1 = figure;
 set(figure1,'units','normalized','outerposition',[0 0 1 1]);
 
@@ -25,21 +24,15 @@ box(axes1,'on');
 hold(axes1,'all');
 set(axes1,'FontSize',30,'FontWeight','bold');
 
+ylabel('processing time (hour)')
+xlabel('count')
 
-bar(cp)
-
-
-ylabel('workload (15min)')
-xlabel('time (15 min)')
-
-legend(axes1,'show','Location','NorthWest','FontSize',10,'FontWeight','bold');
-legend('workload');
 %save figure
 set(gcf, 'PaperPosition', [0 0 13 7]); %Position plot at left hand corner with width 5 and height 5.
 set(gcf, 'PaperSize', [13 7]); %Set the paper to have width 5 and height 5.
 
 %path
 
-saveas(gca, strcat(pwd,'\figs\cumulativeProcessingTime', '.eps'),'psc2') %Save figure 
-saveas(gcf, strcat(pwd ,'\figs\cumulativeProcessingTime'), 'pdf') %Save figure 
-saveas(gcf, strcat(pwd ,'\figs\cumulativeProcessingTime'), 'png') %Save figure 
+saveas(gca, strcat(pwd,'\figs\processingTimeHist_k-mean', '.eps'),'psc2') %Save figure 
+saveas(gcf, strcat(pwd ,'\figs\processingTimeHist_k-mean'), 'pdf') %Save figure 
+saveas(gcf, strcat(pwd ,'\figs\processingTimeHist_k-mean'), 'png') %Save figure 
