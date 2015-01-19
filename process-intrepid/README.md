@@ -54,6 +54,8 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 - Histogram figures
   - Fig 1: histogram of processing time of all jobs
   - Fig 2: histogram of processing time of all jobs, jobs with processing time larger than 24 hours are filtered out.
+  - Fig 2.1: cdf of processing time of all jobs
+  - Fig 2.2: cdf of processing time with filtering of jobs larger than 24 hours
   
 |Fig 1:Histogram Of Processing Time| 
 |:--| 
@@ -62,6 +64,16 @@ Min| Max| Median| Confidence| Conf.L| Conf.U|
 |Fig 2:Histogram Of Processing Time with filtering of large jobs| 
 |:--| 
 |![](figs/processingTimeHist_filtered.png)| 
+
+|Fig 2.1: CDF of Processing Time of jobs| 
+|:--| 
+|![](figs/processingTimeCDF.png)| 
+
+|Fig 2.2: CDF of Processing Time with filtering of large jobs| 
+|:--| 
+|![](figs/processingTimeCDF-filtered.png)| 
+
+
 
 #### K-mean Clustering
 - How to run
