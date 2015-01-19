@@ -8,13 +8,14 @@
 ### 2. Scripts
 |file| function|
 |:---|:--------|
-|[pystats.py](./pystats.py)| tool function to process data by column, tool provided by [Zhonghua Xi](https://github.com/xizhonghua/pystats)|
-|[getColumn.py](./getColumn.py)| tool function to extract target column from file|
-|[process-intrepid.py](./process-intrepid.py)| process jobs' running time|
-|[getHistogram.m](./getHistogram.m)| plot histogram of processing time|
-|[getKMean.m](./getKMean.m)| plot k-mean of processing time|
-|[getHistogramArrivalTime.m](./getHistogramArrivalTime.m)| get histogram of arrival time|
-|[getHistogramInterArrivalTime.m](./getHistogramInterArrivalTime.m)| get histogram of interarrival time|
+|[pystats.py](./scripts/pystats.py)| tool function to process data by column, tool provided by [Zhonghua Xi](https://github.com/xizhonghua/pystats)|
+|[getColumn.py](./scripts/getColumn.py)| tool function to extract target column from file|
+|[process-intrepid.py](./scripts/process-intrepid.py)| process jobs' running time|
+|[getHistogram.m](./scripts/getHistogram.m)| plot histogram of processing time|
+|[getKMean.m](./scripts/getKMean.m)| plot k-mean of processing time|
+|[getHistogramArrivalTime.m](./scripts/getHistogramArrivalTime.m)| get histogram of arrival time|
+|[getHistogramInterArrivalTime.m](./scripts/getHistogramInterArrivalTime.m)| get histogram of interarrival time|
+|[getCDFProcessTime.m](./scripts/getCDFProcessTime.m)| get CDF of processing time|
 
 --
 ### 3. Experiment 1: Analyze Processing Time
