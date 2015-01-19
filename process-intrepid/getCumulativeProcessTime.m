@@ -30,7 +30,7 @@ bar(cp)
 
 
 ylabel('workload (15min)')
-xlabel('time')
+xlabel('time (15 min)')
 
 legend(axes1,'show','Location','NorthWest','FontSize',10,'FontWeight','bold');
 legend('workload');
